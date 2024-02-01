@@ -1,0 +1,150 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navigation-grocery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.navigation-menu{
+    list-style-type: none;
+    
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.navigation-menu li{
+    display: inline;
+    margin-right: auto;
+
+}
+        table, th, td{
+          border: 1px solid;
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          
+        }
+        th, td{
+          padding: 10px;
+          text-align: center;
+          border-radius: 10px;
+                }
+        
+header{
+    text-align: center;
+}
+
+header img{
+    max-width: 100%;
+    height: 300px;
+}
+
+.our-products{
+    display: flex;
+    justify-content: space-around;
+}
+.gambar {
+  width: 100%;
+  padding: 20px;
+  
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.leftcolumn {   
+    float: left;
+    width: 50%;
+  }
+.rightcolumn {
+    float: left;
+    width: 50%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }  
+
+
+  .card {
+    background-color: gainsboro;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .row{
+    background-color: none;
+  }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+ .action_page {
+display: flex;
+justify-content: space-between;
+    align-items: center;
+    
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=SEND]:hover {
+    background-color: #45a049;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }  
+  
