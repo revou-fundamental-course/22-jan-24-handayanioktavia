@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+       <head>
+            <meta charset="utf-8" />
+             
+                <title> e-Grocery </title>
+                <!-- add icon link -->
+                <link rel="icon" src="The_Grocery_Spot.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+
+                            
+       </head>
+        <body>
+            <nav class="navigation-grocery">
+              <img src="The_Grocery_Spot.jpg" alt="Logo" class="logo" style="width:150px;height:150px;">   
+             <ul class="navigation-menu">
+                    <table>
+                        <tr>
+                          
+                            <th><a href="#"></a> Home</th>
+                            <th><a href="#"></a> Our Package </th>
+                            <th><a href="#"></a>Call Us </th>
+                        </tr>
+                    </table>
+                    
+                </ul>
+              </nav>
+
+            <header>
+                <h1>Top Rated E-Groceries Shop in <br>Indonesia</br></h1>
+                <p> Every Day with best ingredients </p>
+    
+            </header>
+
+            <div class="row">
+                <div class="leftcolumn">
+                  <div class="card">
+                    <h2>FRESH DAILY</h2>
+                    <p>"Setiap hari beli sayur dan buah yang fresh disini"</p> 
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 3</div>
+                          <img src="green_veggie.jpg" style="width:100%">
+                          
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 3</div>
+                          <img src="fresh_veggie.jpg" style="width:100%">
+                          
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 3</div>
+                          <img src="veggies.jpg" style="width:100%">
+                         
+                        </div>
+                        
+                        </div>
+                        
+                        <div style="text-align:center">
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                        </div>
+                        
+                        <script>
+                        let slideIndex = 0;
+                        showSlides();
+                        
+                        function showSlides() {
+                          let i;
+                          let slides = document.getElementsByClassName("mySlides");
+                          let dots = document.getElementsByClassName("dot");
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                          }
+                          slideIndex++;
+                          if (slideIndex > slides.length) {slideIndex = 1}    
+                          for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";  
+                          dots[slideIndex-1].className += " active";
+                          setTimeout(showSlides, 2000); // Change image every 2 seconds
+                        }
+                        </script>
+                  </div>
+                  <div class="card">
+                    <h2>RECENT POST</h2>
+                    <h5>Special Offers berlaku dari 1 Februari 2024 s/d 1 Maret 2024</h5>
+                    <img src="sale.jpg" style="height:200px;">
+              
+                    <h5>The benefits of grocery store shopping during the holiday season</h5>
+                    <p>First, grocery stores offer a variety of items that can be used to create personalized and unique gifts. From baking ingredients to spices and oils, you can find just about anything you need to make some delicious edible treats. You can also purchase mason jars or other decorative containers to put together thoughtful homemade salsas, jams, and jellies.</p>
+                    <p>Second, grocery stores often have great deals and discounts on food items during the holiday season. You can save money by stocking up on non-perishables such as pasta, cereal, nuts, and candy that make perfect gifts for family members or friends. If you’re strapped for cash but still want to give something special to your loved ones, you can’t go wrong with a basket of goodies from the grocery store. </p>
+                    <p>Finally, grocery stores are much less crowded than malls or department stores during the holiday season. This makes it easier to navigate and find exactly what you need without having to deal with stressful situations and long lines. You’ll also be able to take your time and browse the aisles for the perfect gifts without worrying about other shoppers. </p>
+                  </div>
+              
+                </div>
+
+
+                <div class="rightcolumn">
+                  <div class="card">
+                    <h2>Contact Us</h2>
+                    <p> Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+
+                    <form name="action_page" onsubmit="return GROCERIES()">
+
+                    <label for="yname">Your Name:</label>
+                    <input type="text" id="yname" name="yname" placeholder="First and Last name">
+                    
+                   <label for="email">Email Address:</label>
+                   <input type="text" id="email" name="emailaddress" autocomplete="off"  placeholder="example@email.com">
+                    
+                    <label for="interest">What are you interested in?</label>
+                    <select id="interest" name="interest">
+
+                          <option value="select options">Select Options</option>
+                          <option value="daily fresh">Daily Fresh</option>
+                          <option value="vegetables">Vegetables</option>
+                          <option value="fruits">Fruits</option>
+                        </select>
+                      
+                        <input type="submit"  id="send" value="SEND">
+                      </form>
+                      <script src="js/script.js"></script>
+                  </div>
+                  <div class="card">
+                    <h3>Popular Products</h3>
+                    <table>
+
+                      <tr>
+                      <th colspan="3" style="font-size: 28px;">Fruits and Vegetables</th>
+                      </tr>
+                      
+                      <tr>
+                      
+                      <th>Name</th>
+                      
+                      <th style="width: 250px;">Picture</th>
+                      <th>Why this is so popular?</th>
+                      </tr>
+    
+                      <tr>
+                      
+                      <td>Korean Shine Muscat Grapes</td>
+                      <td><img src="grapes.jpg" alt="grapes" width="200"></td>
+                      <td>Sweet and seedless</td>
+                      </tr>
+                      
+                      <tr>
+                      
+                      <td>Banana</th>
+                      <td><img src="banana.jpg" alt="banana" width="200"></th>
+                      <td>Containing several bananas of different ripeness so that you can eat them over several days</th>
+                      </tr>
+                      
+                      <tr>
+                      <td>Sawi Pagoda/Tat Soi</th>
+                      <td><img src="pagoda.jpg" alt="pagoda" width="200"></th>
+                      <td>It shapes are amazing and healthy</th>
+                      </tr>
+                      
+                      </table>
+                  </div>
+                  <div class="card">
+                    <h3>Follow Us</h3>
+                    <p>Instagram: thegroceryspot</p>
+                    <p>Facebook: The Grocery Spot</p>
+                    <p>TikTok: thegroceryspot.official</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="footer">
+                <h2></h2>
+              </div>
+
+</body>
+</html>
